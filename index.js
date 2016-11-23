@@ -12,8 +12,16 @@ var helloWorld = function(req,res,next) {
 	res.end('Hello World');
 };
 
+
+var goodbye = function(req,res,next) {
+	res.setHeader('Content-Type','text/plain');
+	res.end('Goodbye World');
+};
+
+
 app.use(logger);
-app.use(helloWorld);
+app.use('/hello',helloWorld);
+app.use('/goodbye',goodbye);
 app.listen(3000);
 
 console.log("Server runnin't http://localhost:3000/");
