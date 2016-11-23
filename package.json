@@ -1,7 +1,7 @@
 {
   "name": "meanimal",
   "version": "1.0.0",
-  "description": "An application with mongo,express.js,angular.js,node.js",
+  "description": "An application with mongo,express.js,angularJS,node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \\\"Error : no test sepcified\\\" && exit 1\""
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/debmalya/MEANimal#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "grunt":"latest"
   }
 }
